@@ -73,10 +73,11 @@ proportion();
 console.log("Задание 3 (фибоначчи)");
 
 let pr = +prompt("Число, на котором нужно остановиться");
-let f = [0, 1, 2, 3];
+let f = [0, 1];
 
-while (f.length - 1 < pr) {
-  f.push(f.length - 1 + f.length - 2);
+for(let i = 2; i < pr; i++) {
+    f.push(f[f.length - 1] + f[f.length - 2]);
 }
+
 
 console.log(f);
